@@ -21,7 +21,6 @@
     "react-scripts": "5.0.1",
     "react-typewriter-effect": "^1.1.0",
     "react-typewriter-hook": "^1.0.2",
-    "react-typist": "^2.0.5",
     "react-typography": "^0.16.23",
     "web-vitals": "^2.1.4"
   },
