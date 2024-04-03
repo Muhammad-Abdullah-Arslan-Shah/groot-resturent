@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion,useAnimation} from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Import useInView hook from react-intersection-observer library
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 const Footer = () => {
   const controls = useAnimation(); // Initialize animation controls using useAnimation hook
   const [ref, inView] = useInView(); // Initialize ref and inView variables using useInView hook

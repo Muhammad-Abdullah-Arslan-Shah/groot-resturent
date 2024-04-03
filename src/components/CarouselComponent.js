@@ -1,9 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Carousel, Button } from 'react-bootstrap';
+import { Carousel} from 'react-bootstrap';
 import Burger from "../pictures/burger.jpg";
-import Sandwich from "../pictures/sandwich.jpg";
+import Sandwich from "../pictures/sandwitch-3.jpg";
 import Wrap from "../pictures/wrap.jpg";
+import { Link } from 'react-router-dom';
 
 const CarouselComponent = () => {
 
@@ -18,7 +19,7 @@ const CarouselComponent = () => {
             alt="Burger"
           />
           <Carousel.Caption>
-            <Button variant="light">Order Now</Button>
+            <Link to="/menu" className="btn btn-light">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -29,7 +30,7 @@ const CarouselComponent = () => {
             alt="sandwich"
           />
           <Carousel.Caption>
-            <Button variant="light">Order Now</Button>
+            <Link to="/menu" className="btn btn-light">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -40,7 +41,7 @@ const CarouselComponent = () => {
             alt="wrap"
           />
           <Carousel.Caption>
-            <Button variant="light">Order Now</Button>
+            <Link to="/menu"  className="btn btn-light">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
