@@ -31,7 +31,7 @@ function Cart() {
             ))}
           </div>
           <h3 className="mt-3 text-light">Total Amount: Rs.{totalAmount}</h3>
-          <button className="btn btn-warning mt-2">Confirm Order</button>
+          <button className="btn btn-warning m-2">Confirm Order</button>
         </>
       )}
     </div>

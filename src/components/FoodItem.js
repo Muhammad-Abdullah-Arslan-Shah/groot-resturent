@@ -43,7 +43,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
 
   return (
     <div>
-      <div className="card h-100 text-light" style={{ backgroundColor: "#AA4203" }}>
+      <div className="card h-100 text-dark" style={{ backgroundColor: "orange" }}>
         <img
           src={imageSrc}
           className="card-img-top"
