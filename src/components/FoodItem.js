@@ -8,7 +8,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
 
   // State variables for quantity, special instructions, and alert
   const [quantity, setQuantity] = useState(1);
-  const [specialInstructions, setSpecialInstructions] = useState("");
+  const [specialInstructions, setSpecialInstructions] = useState(" ");
   const [localAlert, setLocalAlert] = useState(null);  // local alert ka logic
 
   // Function to handle quantity change
@@ -48,7 +48,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
           src={imageSrc}
           className="card-img-top"
           alt={title}
-          style={{ height: "300px", objectFit: "cover" }}
+          style={{ height: "200px", objectFit: "cover" }}
         />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
@@ -77,7 +77,9 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
           <button className="btn btn-light m-2" onClick={handleAddToCart}>
             Add to Cart
           </button>
+          <div style={{height:'50px'}}>
           {localAlert && <Alert alert={{ msg: "Added to Cart Successfully", type: "Success" }} />}
+          </div>
         </div>
       </div>
     </div>
