@@ -21,23 +21,24 @@ const MyNav = () => {
   };
 
   return (
-    // Navbar component with background image and other styles
-    <Navbar variant="dark" expand="lg" style={navStyle} className="">
-      <Container>
+    <div style={navStyle}>
+    <Navbar variant="dark" expand="lg" className="p-3 fs-5">
+      
         {/* Brand logo as a link to the homepage */}
         <Navbar.Brand as={Link} to="/">
           <img
             src={logo}
             alt="logo"
             style={{ height: "auto", width: "150px" }}
+            
           />
         </Navbar.Brand>
         {/* Navbar toggle button for mobile view */}
-      
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {/* Navbar content when collapsed */}
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Nav links for main navigation */}
-          <Nav className="me-auto">
+          <Nav className="me-auto mr-2 mt-2">
             <Nav.Link as={Link} to="/" className="text-light">Home</Nav.Link>
             <Nav.Link as={Link} to="/menu" className="text-light">Menu</Nav.Link>
             <Nav.Link as={Link} to="/reservation" className="text-light">Reservation</Nav.Link>
@@ -45,8 +46,10 @@ const MyNav = () => {
           </Nav>
           {/* Nav links for additional actions like cart, login, and signup */}
           <Nav>
-            {/* Cart link with cart icon and badge showing the number of items in the cart */}
-            
+            <Nav.Link as={Link} to="/cart" className="text-light mr-2">
+              <FontAwesomeIcon icon={faShoppingCart} /> Cart
+              <span className="badge bg-danger">{cartItems.length}</span>
+            </Nav.Link>
             {/* Login link with sign-in icon */}
             <Nav.Link as={Link} to="/login" className="text-light">
               <FontAwesomeIcon icon={faSignInAlt} /> Login
@@ -57,15 +60,9 @@ const MyNav = () => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Nav>
-        <Nav.Link as={Link} to="/cart" className="text-light">
-              <FontAwesomeIcon icon={faShoppingCart} /> Cart
-              <span className="badge bg-danger">{cartItems.length}</span>
-            </Nav.Link>
-            </Nav>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      </Container>
+      
     </Navbar>
+    </div>
   );
 };
 

@@ -19,7 +19,7 @@ function Cart() {
           <div className="row">
             {cartItems.map((item, index) => (
               <div key={index} className="col-md-4 mb-3">
-                <div className="card">
+                <div className="card bg-warning text-dark">
                   <div className="card-body">
                     <h5 className="card-title">{item.title}</h5>
                     <p className="card-text">Quantity: {item.quantity}</p>
@@ -31,7 +31,7 @@ function Cart() {
             ))}
           </div>
           <h3 className="mt-3 text-light">Total Amount: Rs.{totalAmount}</h3>
-          <button className="btn btn-light mt-2">Confirm Order</button>
+          <button className="btn btn-warning mt-2">Confirm Order</button>
         </>
       )}
     </div>
