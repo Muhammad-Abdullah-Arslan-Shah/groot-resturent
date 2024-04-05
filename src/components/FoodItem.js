@@ -53,7 +53,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
-          <p className="card-text">Rs.{totalPrice}</p>
+          <h4 className="card-text text-danger "><b>Rs.{totalPrice}</b></h4>
           <div className="form-group">
             <label htmlFor="quantity">Quantity:</label>
             <input
@@ -74,7 +74,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
               onChange={handleSpecialInstructionsChange}
             />
           </div>
-          <button className="btn btn-light m-2" onClick={handleAddToCart}>
+          <button className="btn btn-danger m-2" onClick={handleAddToCart}>
             Add to Cart
           </button>
           <div style={{height:'50px'}}>

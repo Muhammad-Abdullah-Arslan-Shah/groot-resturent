@@ -29,10 +29,10 @@ function Cart() {
                 <div className="card bg-warning text-dark">
                   <div className="card-body">
                    
-                    <h5 className="card-title">{item.title}</h5>
-                    <p className="card-text">Quantity: {item.quantity}</p>
-                    <p className="card-text">Price: Rs.{item.price * item.quantity}</p>
-                    <p className="card-text">Special instruction: {item.specialInstructions}</p>
+                    <h3 className="card-title">{item.title}</h3>
+                    <p className="card-text"><b>Quantity:</b> {item.quantity}</p>
+                    <p className="card-text "><b>Price: Rs.</b>{item.price * item.quantity}</p>
+                    <p className="card-text"><b>Special instruction:</b> {item.specialInstructions}</p>
                     <button className="btn btn-sm btn-danger float-left" onClick={() => handleRemoveFromCart(index)}>Remove</button>
                   </div>
                 </div>
