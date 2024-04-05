@@ -47,7 +47,7 @@ const Login = () => {
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-light mt-3">
+                <button type="submit" className="btn btn-light m-3">
                   Login
                 </button>
               </form>

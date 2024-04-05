@@ -4,7 +4,7 @@ import React from 'react'
 
   return (
    <>
-   <div style={{height : '100px'}}>
+   <div >
      {props.alert && <div className="alert alert-primary" role="alert">
  <strong>{props.alert.type}</strong>: {props.alert.msg}
 </div>}

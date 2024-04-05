@@ -8,15 +8,16 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
 
   // State variables for quantity, special instructions, and alert
   const [quantity, setQuantity] = useState(1);
-  const [specialInstructions, setSpecialInstructions] = useState(" ");
+  const [specialInstructions, setSpecialInstructions] = useState("");
   const [localAlert, setLocalAlert] = useState(null);  // local alert ka logic
 
   // Function to handle quantity change
   const handleQuantityChange = (e) => {
     const newQuantity = parseInt(e.target.value);
-    if (!isNaN(newQuantity)) {
-      setQuantity(newQuantity);
-    }
+   if(newQuantity<1){setQuantity(1)}
+   else{setQuantity(newQuantity)}
+      
+    
   };
 
   // Function to handle special instructions change
@@ -24,14 +25,19 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
     setSpecialInstructions(e.target.value);
 
   // Calculate total price
-  const totalPrice = price * quantity;
+  const totalPrice = ()=>{
+    if(quantity>1 )
+    {return quantity*price}
+    else
+    {return price};
+  };
 
   // Function to handle "Add to Cart" button click
   const handleAddToCart = () => {
     const newCartItem = {
       title: title,
       quantity: quantity,
-      price: totalPrice,
+      price: totalPrice(),
       specialInstructions: specialInstructions,
     };
     setCartItems([...cartItems, newCartItem]); // Add the new item to the existing cartItems array
@@ -53,7 +59,7 @@ const FoodDetails = ({ imageSrc, title, description, price }) => {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
-          <h4 className="card-text text-danger "><b>Rs.{totalPrice}</b></h4>
+          <h4 className="card-text text-danger "><b>Rs.{totalPrice()}</b></h4>
           <div className="form-group">
             <label htmlFor="quantity">Quantity:</label>
             <input
