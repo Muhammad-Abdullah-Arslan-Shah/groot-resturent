@@ -9,7 +9,7 @@ const ContactUs = () => {
 
   return (
     <Container className="py-5 text-light">
-      <h2 className="text-center mb-4 font-effect-fire " style={{ fontSize: "60px" }}>Contact Us</h2>
+      <h2 className="text-center mb-4 font-effect-fire-animation " style={{ fontSize: "60px" }}>Contact Us</h2>
       <Row>
         <Col md={6}>
           <h4>Get in Touch</h4>

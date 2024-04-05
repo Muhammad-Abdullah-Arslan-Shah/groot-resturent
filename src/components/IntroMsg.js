@@ -31,7 +31,7 @@ const IntroMsg = () => {
       }}
     >
       <div className="container">
-        <h1 style={{ fontFamily: "Arial" }} className="font-effect-fire text-danger">
+        <h1 style={{ fontFamily: "Arial" }} className="font-effect-fire-animation text-danger">
           <b>{text}</b>
         </h1>
       </div>

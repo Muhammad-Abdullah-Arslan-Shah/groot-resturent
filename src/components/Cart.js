@@ -15,7 +15,7 @@ function Cart() {
 
   return (
     <div className="container">
-      <h1 className="font-effect-fire text-center my-5">Checkout</h1>
+      <h1 className="font-effect-fire-animation text-center my-5">Checkout</h1>
       {cartItems.length === 0 ? (
         <div>
           <h1 className="text-light">Your cart is empty.</h1>

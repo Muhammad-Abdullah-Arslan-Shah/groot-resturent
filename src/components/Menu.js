@@ -6,7 +6,7 @@ const Menu = () => {
   const { burgerArray, friesArray, sandArray, wrapArray } = useContext(FoodContext);
   return (
     <div className="container">
-      <h1 className="font-effect-fire text-center my-5" style={{ fontSize: "100px" }}>Menu</h1>
+      <h1 className="font-effect-fire-animation text-center my-5" style={{ fontSize: "100px" }}>Menu</h1>
 
       {/* Burgers */}
       <h1 className="text-light m-3 font-effect-outline">Burgers</h1>

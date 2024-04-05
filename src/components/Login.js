@@ -17,7 +17,7 @@ const Login = () => {
         <div className="col-md-6">
           <div className="card bg-dark text-light">
             <div className="card-header">
-              <h2 className=" d-flex font-effect-fire justify-content-center p-2">Login</h2>
+              <h2 className=" d-flex font-effect-fire-animation justify-content-center p-2">Login</h2>
             </div>
             <div className="card-body">
               <form onSubmit={handleSubmit}>

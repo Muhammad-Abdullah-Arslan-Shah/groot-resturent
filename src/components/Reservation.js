@@ -5,7 +5,7 @@ const Reservation = () => {
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
       <div className="container mt-4 mx-5 mb-2">
-      <h2 className="text-center font-effect-fire my-4" style={{ fontSize: "60px" }}>Make a Reservation</h2>
+      <h2 className="text-center font-effect-fire-animation my-4" style={{ fontSize: "60px" }}>Make a Reservation</h2>
         <Form className="font-effect-outline   border border-warning p-5" >
         
           <Form.Group className="mb-3" controlId="formName">
