@@ -10,38 +10,38 @@ const CarouselComponent = () => {
 
   return (
     <>
-      <Carousel interval={2000} style={{ height: "px" }}>
+      <Carousel interval={2000} >
         <Carousel.Item>
           <img
-            height={500}
+            height={380}
             style={{ width: "100%" }}
             src={Burger}
             alt="Burger"
           />
           <Carousel.Caption>
-            <Link to="/menu" className="btn btn-light">Order Now</Link>
+            <Link to="/menu" className="btn btn-danger">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            height={500}
+            height={380}
             style={{ width: "100%" }}
             src={Sandwich}
             alt="sandwich"
           />
           <Carousel.Caption>
-            <Link to="/menu" className="btn btn-light">Order Now</Link>
+            <Link to="/menu" className="btn btn-danger">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            height={500}
+            height={380}
             style={{ width: "100%" }}
             src={Wrap}
             alt="wrap"
           />
           <Carousel.Caption>
-            <Link to="/menu"  className="btn btn-light">Order Now</Link>
+            <Link to="/menu"  className="btn btn-danger">Order Now</Link>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

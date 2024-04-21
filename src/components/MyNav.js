@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import FoodContext from "../context/FoodContext";
 import logo from "../pictures/logo.png";
 import navBackground from "../pictures/nav-back.jpg";

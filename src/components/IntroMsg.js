@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import introback from "../pictures/intro-back.jpg";
+// import introback from "../pictures/intro-back.jpg";
 
 const IntroMsg = () => {
   const [text, setText] = useState("");
   const message =
-    "Welcome to Our Restaurant! Explore our diverse menu with fresh, delightful ingredients. Join us for an unforgettable dining experience";
+    "Welcome! Discover fresh ingredients, diverse flavors, and an unforgettable dining experience!";
 
   useEffect(() => {
     let index = 0;
@@ -12,7 +12,7 @@ const IntroMsg = () => {
       setText(message.substring(0, index));
       index++;
       if (index > message.length) clearInterval(interval);
-    }, 30);
+    }, 25);
 
     return () => clearInterval(interval);
   }, []);
@@ -21,17 +21,17 @@ const IntroMsg = () => {
     <div
       className=" p-3"
       style={{
-         backgroundImage: `url('${introback}')`,
-        backgroundSize: "cover",
-        // backgroundColor:"black",
-        height: "100vh",
+          // backgroundImage: `url('${introback}')`,
+        backgroundSize: "contain",
+        backgroundColor:"black",
+        height: "25vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
       <div className="container">
-        <h1 style={{ fontFamily: "Arial" }} className="font-effect-fire-animation text-danger">
+        <h1 style={{ fontFamily: "Arial" }} className="font-effect-fire-animation text-danger fs-4">
           <b>{text}</b>
         </h1>
       </div>
