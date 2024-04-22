@@ -12,7 +12,7 @@ const IntroMsg = () => {
       setText(message.substring(0, index));
       index++;
       if (index > message.length) clearInterval(interval);
-    }, 25);
+    }, 10);
 
     return () => clearInterval(interval);
   }, []);
